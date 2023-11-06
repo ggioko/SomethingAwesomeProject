@@ -91,8 +91,8 @@ namespace SomethingAwesomeProject
             double distance = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
             float newViewY = (float)(Math.Atan2(deltaZ, distance) * 180 / Math.PI);
 
-            memory.WriteMemory(LocalPlayer + ViewX, "float", newViewX.ToString());
-            memory.WriteMemory(LocalPlayer + ViewY, "float", newViewY.ToString());
+            memory.WriteMemory(Local + ViewX, "float", newViewX.ToString());
+            memory.WriteMemory(Local + ViewY, "float", newViewY.ToString());
         }
 
         List<Player> GetEnemyPlayers(Player LocalPlayer)
